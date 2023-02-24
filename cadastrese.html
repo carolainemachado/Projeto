@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilos.css">
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+    <title>Inscrição e Atualização</title>
+</head>
+<body>
+    <main>
+        <article>
+      
+        <form action="cadastro" method="get" autocomplete="on">
+            <div id="quadro_entrar">
+                <fieldset>
+                    <legend>Formulário de inscrição</legend>
+                    <p>
+                        <label for="iname">Nome Completo:</label>
+                        <input type="text" name="nome" id="inome" minlength="5" maxlength="30" required>
+                    </p>
+                    <p>
+                        <label for="idate">Data de nascimento:</label>
+                        <input type="date" name="date" id="idate" autocomplete="date" required placeholder="xx/xx/xxxx">
+                    </p>
+                    <p>
+                        <label for="estado">Estado:</label>
+                        <select name="estado" id="estado">
+
+                            <option value="" selected>---Escolha---</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espirito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="icidade">Cidade:</label>
+                        <input type="cidade" name="cidade" id="icidade" autocomplete="cidade" required>
+                    </p>
+                    <p>
+                        <label for="ibairro">Bairro:</label>
+                        <input type="bairro" name="bairro" id="ibairro" autocomplete="bairro" required>
+                    </p>
+                    <p>
+                        <label for="iescolaridade">Escolaridade:</label>
+                        <select name="escolaridade" id="iescolaridade">
+
+                            <option value="" selected>---Escolha---</option>
+                            <optgroup label="Ensino Fundamental">
+                                <option value="completo">Completo</option>
+                                <option value="incompleto">Incompleto</option>
+                                <option value="cursando">Cursando</option>
+                            </optgroup>
+                            <optgroup label="Ensino Médio">
+                                <option value="completo">Completo</option>
+                                <option value="incompleto">Incompleto</option>
+                                <option value="cursando">Cursando</option>
+                            </optgroup>
+                            <optgroup label="Ensino Superior">
+                                <option value="completo">Completo</option>
+                                <option value="incompleto">Incompleto</option>
+                                <option value="cursando">Cursando</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="Selecione seu curso:">Selecione seu curso:</label>
+                        <div>
+                            <input type="radio" name="opcao" value="Administração">
+                            <label for="Administração">Administração</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="opcao" value="Informática Básica">
+                            <label for="Informática Básica">Informática Básica</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="opcao" value="Libras Básico">
+                            <label for="Libras Básico">Libras Básico</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="opcao" value="Meio Ambiente">
+                            <label for="Meio Ambiente">Meio Ambiente</label>
+                        </div>
+                    </p>
+                    
+                    <p>
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" autocomplete="email" required>
+                    </p>
+
+                    <p>
+                        <label for="itel">Telefone:</label>
+                        <input type="tel" name="tel" id="itel" autocomplete="tel" required placeholder="(xx)xxxxx-xxxx">
+                        <input type="tel" name="tel" id="itel" autocomplete="tel" required placeholder="(xx)xxxxx-xxxx">
+                    </p>
+
+                    <p><label for="mensagem">Mensagem:</label><br>
+                        <textarea name="mensagem" id="mensagem" rows="5" cols="80"></textarea>
+                    </p>
+
+                    <p>
+                        <a href="processamento.html"><input id="botao_geral" type="submit" value="Enviar"></a>
+                        <input id="botao_geral" type="reset" value="Limpar">
+                    </p>
+                </fieldset>
+                <br><br><a  href="index.html">Voltar para primeira página</a>
+            </div>
+                  
+             </form>
+    </div>
+</article>
+</main>
+<footer>
+    <p>Site criado por <a href="https://github.com/carolainemachado" target="_blank">Carolaine Machado</a></p>
+</footer>
+</body>
+</html>

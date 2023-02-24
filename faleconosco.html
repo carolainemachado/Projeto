@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+        <link rel="stylesheet" href="estilo/estilos.css">
+        <title>Fale Conosco</title>
+    </head>
+    <body>
+        <div id="quadro_faleconosco">
+            <main>
+                <article>
+                    <fieldset id="entrar-formulario">
+                                                
+                    <h1>Fale Conosco</h1><hr>
+                    <p>O Study tem a maior satisfação em atendê-lo.</p>
+
+                    <p><b>Importante: preencha corretamente os campos do formulário a seguir, <br>
+                    para que possamos lhe dar um retorno.</b></p><hr>
+                    <p>
+                        <label for="iname">Nome Completo:</label>
+                        <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+                    </p>
+                    <p>
+                        <label for="idate">Data de nascimento:</label>
+                        <input type="date" name="date" id="idate" required placeholder="xx/xx/xxxx">
+                    </p>
+                    <p>
+                        <label for="telefone">Telefone:</label>
+                        <input type="telefone" name="telefone" id="telefone" required placeholder="(xx) xxxxx-xxxx">
+                    </p>
+                    <p>
+                        <label for="iestado">Estado:</label>
+                        <input type="estado" name="estado" id="iestado" required>
+                    </p>
+                    <p>
+                        <label for="icidade">Cidade:</label>
+                        <input type="cidade" name="cidade" id="icidade" autocomplete="cidade" required>
+                    </p>
+                    <p>
+                        <label for="ibairro">Bairro:</label>
+                        <input type="bairro" name="bairro" id="ibairro" autocomplete="bairro" required>
+                    </p>
+                    <p>
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" autocomplete="iemail" required placeholder="exemplo@exemplo.com.br">
+                    </p>
+                    <p>
+                        <label for="iassunto">Assunto:</label>
+                        <input type="assunto" name="assunto" id="iassunto" autocomplete="iassunto" required>
+                    </p>
+                    <p>
+                    <label for="mensagem">Mensagem:</label><br>
+                        <textarea name="mensagem" id="mensagem" rows="5" cols="80"></textarea>
+                    </p>
+                    </fieldset>
+                    <br><br><a href="index.html">Voltar para primeira página</a><br>
+                </article>
+            </main>
+        </div>
+        <footer>
+            <p>Site criado por <a href="https://github.com/carolainemachado" target="_blank">Carolaine Machado</a></p>
+        </footer> 
+    </body>
+</html>
